@@ -120,13 +120,6 @@ void KeyLineEdit::wheelEvent(QWheelEvent *event)
             int v = new_text.toInt();
             int old_v = v;
 
-            if (event->delta() > 0){
-                v++;
-            }
-            else{
-                v--;
-            }
-
             if (_min != 0 || _max != 0)
             {
                 if (v < _min ){
